@@ -1,6 +1,6 @@
-<h1><%= @player_1 %> VS <%= @player_2 %></h1>
+<h1><%= @game.player_1.name %> VS <%= @game.player_2.name %></h1>
 
-<h2><%= @player_2 %> : <%= MAX_HP %> HP </h2>
+<h2><%= @game.player_2.name %> : <%= @game.player_2.hp %> HP </h2>
 
 <form action="/player_1_attacks_player_2" method="get">
   <input type="submit" value="Attack Player 2">
