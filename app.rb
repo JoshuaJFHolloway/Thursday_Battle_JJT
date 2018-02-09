@@ -25,7 +25,7 @@ class Battle < Sinatra::Base
   end
 
   get '/player_1_attacks_player_2' do
-    @game = Game.new
+    @game = Game.new($player_1, $player_2)
     @player_1 = $player_1.name
     @player_2 = $player_2.name
     erb(:player_1_attacks_player_2)

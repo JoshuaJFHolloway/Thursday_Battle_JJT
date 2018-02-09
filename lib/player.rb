@@ -10,10 +10,6 @@ class Player
     @hp = hp
   end
 
-  # def attack(player)
-  #   player.receive_damage
-  # end
-
   def receive_damage
     @hp -= BASIC_ATTACK
   end

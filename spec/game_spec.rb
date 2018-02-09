@@ -2,12 +2,12 @@ require 'game'
 
 describe Game do
 
+  subject { described_class.new(player, player) }
 
+  let(:player) { double('player') }
 
   describe "#attack" do
     it 'damages the player' do
-
-      player = instance_double("Player")
 
       expect(player).to receive(:receive_damage)
       subject.attack(player)
